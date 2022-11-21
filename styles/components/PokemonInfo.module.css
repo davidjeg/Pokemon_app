@@ -1,0 +1,52 @@
+.info_container {
+  width: 100%;
+  max-width: 32rem;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-weight: 700;
+}
+.bar {
+  width: 100%;
+  background-color: #e4e4e7;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  animation: full_bar 1s linear;
+}
+
+.bar_fill {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 2rem,
+    #e4e4e7 1rem,
+    #e4e4e7 3rem
+  );
+  background-size: 200% 200%;
+  animation: anim 10s linear infinite;
+  background-color: #fff;
+  max-width: 100%;
+}
+
+.bar_left {
+  padding: 1rem;
+}
+.bar_right {
+  width: 50%;
+  padding: 1rem;
+}
+
+@keyframes anim {
+  100% {
+    background-position: 100% 100%;
+  }
+}
+@keyframes full_bar {
+  from {
+    width: 0%;
+  }
+}

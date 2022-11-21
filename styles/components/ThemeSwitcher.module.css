@@ -1,0 +1,22 @@
+.icon_container {
+  padding: 0.1rem;
+  display: inline-flex;
+  border-radius: 1.6rem;
+  background-color: #f9a8d4;
+}
+
+.active {
+  background-color: white;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.disabled {
+  color: white;
+}
+
+.button {
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+}

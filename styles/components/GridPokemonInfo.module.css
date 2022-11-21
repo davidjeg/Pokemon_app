@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+  animation: showContainer 1s linear forwards;
+}
+
+.grid_pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.6rem;
+}
+
+@media (min-width: 1000px) {
+  .grid_pokemon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@keyframes showContainer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

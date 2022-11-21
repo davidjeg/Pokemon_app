@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+}
+.search {
+  width: 30rem;
+  padding: 0.4rem;
+  border-color: #fff7ed;
+  border-radius: 0.6rem;
+  outline: none;
+}
+.search_container {
+  position: relative;
+  margin-top: 1rem;
+}
+.search_icon {
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 501px) {
+  .search {
+    width: 40rem;
+  }
+}
